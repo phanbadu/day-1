@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Roboto&display=swap');
+
+:root {
+    --main-color: #fd4646;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to right, #c0e4c2, #c7d685);
+}
+
+.product {
+    max-width: 740px;
+    width: 100%;
+    height: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.cart {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    background: linear-gradient(to right, #cde0cf, #80f7f7);
+    box-shadow: 0 0 2px  black;
+}
+
+.cart:hover {
+    padding: 6px;
+    transition: 0.2s;
+    border: 1px solid black;
+}
+
+.cart:hover .cart-img {
+    border-radius: 5px;
+}
+
+.cart-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(rog.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.cart-heading {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cart-information {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.cart-bass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-price {
+    color: var(--main-color);
+    line-height: 30px;
+}   
+
+.cart-buy {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: linear-gradient(to right, #415e44, #8e1899);
+    border-radius: 5px;
+    color: black;
+}
+
+.bill {
+    width: auto;
+    height: 10px;
+    color: #fd4646;
+}
+
+.cart-buy:hover {
+    background: linear-gradient(to right, var(--main-color), #8f2727);
+    color: white;
+}
+
+.cart-buy:hover .bill {
+    fill: #fff;
+}
